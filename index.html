@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+</style>
 <body>
     <section>
         <nav class="max-w-[1200px] h-[50px] m-auto flex items-center gap-[200px] justify-end">
@@ -16,7 +21,7 @@
                 <a href="">Location</a>
                 <a href="">Contact</a>
             </div>
-            <button class="w-[120px] h-[40px] rounded-[30px] bg-[#24AB70] text-[white]">Login</button>
+            <a href="#login"><button class="w-[120px] h-[40px] rounded-[30px] bg-[#24AB70] text-[white]">Login</button></a>
         </nav>
     </section>
     <section class="w-[100%] h-[600px]">
@@ -386,6 +391,29 @@
             </div>
             </div>
             <img class="rounded-[0px_30px_30px_0px]" src="./imgs/Mask Group.png" alt="">
+        </nav>
+    </section>
+    <section class="w-[100%] h-[700px] flex">
+        <nav class="min-w-[1200px] h-[600px] m-auto bg-[url('../imgs/map.png')] bg-cover bg-center flex items-center justify-center rounded-[20px]">
+            <div class="w-[1000px] h-[500px] flex flex-col items-end justify-end gap-[70px]">
+                <div class="w-[100px] h-[100px] rounded-[50%] flex items-center justify-center mr-[19%] bg-[#24AB701A]">
+                    <div class="w-[60px] h-[60px] rounded-[50%] flex items-center justify-center bg-[#24AB701A]">
+                    <div class="w-[20px] h-[20px] rounded-[50%] bg-[#24AB70]"></div>
+                    </div>
+                </div>
+                <div class="w-[1000px] h-[200px] bg-[white] flex flex-col gap-[20px] p-[30px] rounded-[20px]">
+                    <h1 class="text-[35px] font-bold">Location of our Hotelos</h1>
+                    <div class="flex items-center gap-[30px]">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                        <div id="login" class="">
+                            <form class="w-[400px] h-[50px] gap-[30px] bg-[#FAFAFA] flex items-center justify-end rounded-[30px]" action="">
+                                <input class="w-[200px] h-[40px] text-[14px] p-[10px] rounded-[30px] " placeholder="Enter your email" type="email">
+                                <button class="w-[140px] h-[50px] text-[white] bg-[#24AB70] rounded-[40px]">Contact</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </section>
 </body>
